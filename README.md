@@ -35,10 +35,10 @@ Developed a web application to predict the variety of crop using parameters like
 
 ## Steps to follow:
 
-  -open command prompt and locate to project directory
-  -create a virtual environment using : python -m venv venv
-  -activate the environment using : venv\Scripts\activate
-  -install the common dependencies : --pip install flask pandas scikit-learn numpy
+  - open command prompt and locate to project directory
+  - create a virtual environment using : python -m venv venv
+  - activate the environment using : venv\Scripts\activate
+  - install the common dependencies : --pip install flask pandas scikit-learn numpy
                                     --pip install joblib pickle-mixin
   - run the file : python app.py
   - ctrl + click on the link like this in the output : http://127.0.0.1:5000/.
