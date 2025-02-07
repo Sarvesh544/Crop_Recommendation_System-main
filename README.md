@@ -33,7 +33,15 @@ Developed a web application to predict the variety of crop using parameters like
     python app.py
     ```
 
+## Steps to follow:
 
+  1)open command prompt and locate to project directory
+  2)create a virtual environment using : python -m venv venv
+  3)activate the environment using : venv\Scripts\activate
+  4)install the common dependencies : --pip install flask pandas scikit-learn numpy
+                                    --pip install joblib pickle-mixin
+  5) run the file : python app.py
+  6) ctrl + click on the link like this in the output : http://127.0.0.1:5000/.
 
 ## File Structure
 
@@ -57,11 +65,8 @@ crop-recommendation-system/
 │   ├── service.html
 │
 ├── app.py
-├── train_model.py
-├── config.json
-├── requirements.txt
 ├── README.md
-
+├── crop_recommendation.pkl
 
 ```
 
