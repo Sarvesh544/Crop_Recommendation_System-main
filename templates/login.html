@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture</title>
+<style type="text/css">
+    *{padding : 0;
+      margin : 0;
+      box-sizing: border-box;}
+    header{
+        width:100%;
+        height: 100vh;
+        background: url("../static/images/crop.jpg");
+        /* background: url("D:\Projects\Crop_Recommendation_System-main\static\images\crop.jpg"); */
+        /* change this when running on Flask */
+        background-size: cover;
+        font-family: sans-serif;
+      }
+    nav{
+        width: 100%;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    .logo{
+        margin-left: 0%;
+        font-size: 3em;
+        letter-spacing: 2px;
+        color: rgb(255, 255, 255);
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+    }
+    .menu a:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom :3px solid indianred;
+    }
+    .menu a:hover:before{
+        width: 95%;
+    }
+    .register a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        background: indianred;
+        border-radius: 17px;
+        transition: 0.4s;
+    }
+    .register a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+    }
+    .me{
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: azure;
+    }
+    .me span{
+        letter-spacing: 5px;
+    }
+    .me h1{
+        font-size: 3.5em;
+        font-style: italic;
+    }
+    .me a{
+        text-decoration: none;
+        background: indianred;
+        color: black;
+        padding: 16px 25px;
+        border-radius: 15px;
+        letter-spacing: 3px;
+        transition: 0.4s;
+    }
+    .me a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class ="logo"><i>
+            U-InfoTech</i>
+        </div>
+        <div class ="menu">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('service') }}">Services</a>
+            <a href="{{ url_for('help') }}">Help</a>
+            <a href="#">Our sites</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </div>
+        <div class="register">
+            <a href="#">Register</a>
+        </div>
+    </nav>
+        <section class="me">
+            <span>Enjoy</span>
+            <h1>Welcome to the Technology Era !!</h1>
+    
+            <br>
+            <a href="{{ url_for('input') }}">Thrill the experience</a>
+        </section>
+        
+    </header>
+
+</body>
+</html>

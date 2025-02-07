@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Data Table</title>
+
+    <style>
+        header {
+            background-color: rgb(79, 189, 76);
+            color: #000000;
+            padding: 18px;
+            text-align: center;
+            font-size: 30px;
+            font-style: italic;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #9a3131;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            margin-left: 1.9cm;
+            background-color: rgb(123, 180, 242);
+            color: #000000;
+            padding: 10px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(224, 125, 125);
+        }
+    </style>
+    
+</head>
+<body>
+
+<header><b>
+Standard Crop Data</b>
+</header>
+
+<p>
+    According to study and research done by variuos scientists all over the world , they have given some standard values of required parameters for crop yield.<br>
+    Indian Government launched <i> "Farmer.gov.in" </i>website for detailed information of each crop also it provides various services like providation of seeds and an expert opinion. 
+</p>
+<ul style="list-style-type:disc;">
+    <li>1 inch rainfall = 25.4 mm</li> <br>
+    <li>1 % humidity = air is at 1 percent of its water-holding capacity for the present temperature. </li>
+</ul>
+
+<table>
+    <thead>
+        <tr>
+            <th>Sr. No</th>
+            <th>Crop</th>
+            <th>Nitrogen [ kg per Hectar]</th>
+            <th>Phoshorous [ kg per Hectar]</th>
+            <th>Potassium [ kg per Hectar]</th>
+            <th>Rainfall [ inches]</th>
+            <th>pH</th>
+            <th>Humidity [ %]</th>
+            <th>Temperature [ °C ]</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rice</td>
+            <td>100-150</td>
+            <td>20-40</td>
+            <td>40-60</td>
+            <td>180-300 </td>
+            <td>6.0-7.5</td>
+            <td>80-85%</td>
+            <td>20-26°C</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Maize</td>
+            <td>100-200</td>
+            <td>42-58</td>
+            <td>43-78</td>
+            <td>60-110 </td>
+            <td>6.0-7.5</td>
+            <td>50-75%</td>
+            <td>18-25°C</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Chickpea</td>
+            <td>20-40</td>
+            <td>20-40</td>
+            <td>20-40</td>
+            <td>65-95 </td>
+            <td>6.0-6.8</td>
+            <td>59-70%</td>
+            <td>17-25°C</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Kidneybeans</td>
+            <td>40-80</td>
+            <td>20-40</td>
+            <td>20-39</td>
+            <td>60-145 </td>
+            <td>6.0-6.9</td>
+            <td>19-24%</td>
+            <td>16-28°C</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Pigeonbeans</td>
+            <td>20-40</td>
+            <td>20-38</td>
+            <td>21-37</td>
+            <td>96-198 </td>
+            <td>6.0-7.5</td>
+            <td>33-67%</td>
+            <td>19-36°C</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Mothbeans</td>
+            <td>20-30</td>
+            <td>15-25</td>
+            <td>10-20</td>
+            <td>32-73 </td>
+            <td>6.0-7.2</td>
+            <td>41-64%</td>
+            <td>24-31°C</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Mungbeans</td>
+            <td>20-40</td>
+            <td>20-40</td>
+            <td>20-39</td>
+            <td>37-60 </td>
+            <td>6.0.-7.5</td>
+            <td>62-89%</td>
+            <td>27-30°C</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Blackgram</td>
+            <td>20-41</td>
+            <td>19-39</td>
+            <td>20-40</td>
+            <td>61-75 </td>
+            <td>6.0-7.0</td>
+            <td>60-78%</td>
+            <td>25-33°C</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Mango</td>
+            <td>16-32</td>
+            <td>16-32</td>
+            <td>16-32</td>
+            <td>89-100 </td>
+            <td>6.0-7.0</td>
+            <td>47-64%</td>
+            <td>25-35°C</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Grapes</td>
+            <td>50-100</td>
+            <td>20-40</td>
+            <td>50-100</td>
+            <td>66-74 </td>
+            <td>6.0-7.0</td>
+            <td>79-83%</td>
+            <td>10-21°C</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Watermelon</td>
+            <td>100-150</td>
+            <td>50-83</td>
+            <td>50-100</td>
+            <td>41-59 </td>
+            <td>6.0-7.2</td>
+            <td>81-89%</td>
+            <td>23-26°C</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Apple</td>
+            <td>8-16</td>
+            <td>8-17</td>
+            <td>16-32</td>
+            <td>101-123 </td>
+            <td>6.0-7.0</td>
+            <td>90-95%</td>
+            <td>20-24°C</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Orange</td>
+            <td>5-15</td>
+            <td>5-15</td>
+            <td>3-15</td>
+            <td>101-119 </td>
+            <td>5.9-6.8</td>
+            <td>88-93%</td>
+            <td>10-25°C</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Papaya</td>
+            <td>16-24</td>
+            <td>8-10</td>
+            <td>24-40</td>
+            <td>81-230 </td>
+            <td>6.0-7.0</td>
+            <td>90-95%</td>
+            <td>23-43°C</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Coconut</td>
+            <td>40-200</td>
+            <td>16-40</td>
+            <td>80-160</td>
+            <td>130-230 </td>
+            <td>6.0-7.0</td>
+            <td>90-97%</td>
+            <td>23-30°C</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Banana</td>
+            <td>200-400</td>
+            <td>40-80</td>
+            <td>200-400</td>
+            <td>90-118 </td>
+            <td>6.0-7.2</td>
+            <td>75-84%</td>
+            <td>25-29°C</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Pomegranate</td>
+            <td>8-16</td>
+            <td>4-10</td>
+            <td>12-25</td>
+            <td>102-111 </td>
+            <td>5.5-7.1</td>
+            <td>85-94%</td>
+            <td>19-25°C</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Muskmelon</td>
+            <td>100-150</td>
+            <td>40-60</td>
+            <td>40-80</td>
+            <td>20-30 </td>
+            <td>6.0-7.2</td>
+            <td>89-94%</td>
+            <td>25-29°C</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Jute</td>
+            <td>60-120</td>
+            <td>20-40</td>
+            <td>20-40</td>
+            <td>145-196 </td>
+            <td>6.0-7.2</td>
+            <td>71-87%</td>
+            <td>21-26°C</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Cotton</td>
+            <td>100-200</td>
+            <td>40-80</td>
+            <td>40-120</td>
+            <td>70-91 </td>
+            <td>6.0-7.5</td>
+            <td>76-85%</td>
+            <td>21-25°C</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Coffee</td>
+            <td>150-300</td>
+            <td>50-100</td>
+            <td>100-200</td>
+            <td>129-196 </td>
+            <td>6.0-6.6</td>
+            <td>51-69%</td>
+            <td>19-27°C</td>
+        </tr>
+       
+    </tbody>
+</table><br>
+
+<a href="{{ url_for('main') }}"><button>BACK</button></a>
+
+<footer>
+    <p>&copy; 2023 Agricultural Dashboard Project</p>
+</footer>
+</body>
+</html>

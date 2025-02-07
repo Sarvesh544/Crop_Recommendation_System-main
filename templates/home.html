@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(233, 111, 233);
+            color: #000000;
+            padding: 18px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+        }
+
+        p {
+            color: #666;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+            flex: 1;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .feature:hover {
+            background-color: rgb(217, 224, 157);
+            transform: scale(1.05);
+        }
+
+        button {
+            margin-left: 1cm;
+            background-color: rgb(123, 180, 242);
+            color: #000000;
+            padding: 10px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(208, 136, 215);
+        }
+
+        footer {
+            padding: 1em;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crop Recommendation System</h1>
+    </header>
+
+    <section>
+        <h2>About the Project</h2>
+        <p>
+            Agriculture plays a crucial role in sustaining human life and meeting the ever-growing demand for food. With the world's population steadily increasing, the need for efficient and sustainable agricultural practices has become paramount.
+            Traditional farming practices often rely on experience and intuition, leading to suboptimal results and potential inefficiencies. The integration of modern technology, particularly machine learning, provides an opportunity to revolutionize the agricultural sector.<br>
+            Our crop prediction project utilizes various machine learning algorithms to predict the optimal crops for cultivation. We integrate IoT devices such as pH sensors to gather real-time data and enhance prediction accuracy.
+
+        </p>
+
+        <h2>Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Machine Learning Algorithms</h3>
+                <p>Utilizing advanced ML algorithms for accurate crop predictions.</p>
+            </div>
+            <div class="feature">
+                <h3>IoT Integration</h3>
+                <p>Integration of IoT devices like pH sensors for real-time data collection.We have used various sensors like pH sensor , NPK sensor.</p>
+            </div>
+            <div class="feature">
+                <h3>User-Friendly Interface</h3>
+                <p>An intuitive interface for users to interact with and analyze the predictions.</p>
+            </div>
+        </div>
+
+       
+    </section>
+    <a href="{{ url_for('main') }}">login</a>
+
+    <footer>
+        <p>&copy; 2023 Agricultural Dashboard Project</p>
+    </footer>
+</body>
+</html>
